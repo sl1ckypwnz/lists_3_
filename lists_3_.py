@@ -4,5 +4,6 @@ a =[]
 for _ in range(n):
     a.append(int(input("Вес рыболова - ")))
     
-print((2 * min(a) <= m) + len([x for x in a if x + min(a) > m]))
+print("Минимальное количество лодок:", (2 * min(a) <= m) + len([x for x in a if x + min(a) > m]))
+
 
